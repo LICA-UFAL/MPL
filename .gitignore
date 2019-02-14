@@ -1,0 +1,2 @@
+#ignore pipenv file .lock
+Pipfile.lock
