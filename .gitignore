@@ -1,2 +1,5 @@
 #ignore pipenv file .lock
 Pipfile.lock
+
+#pyc files
+__pycache__/
