@@ -8,10 +8,10 @@
 MPL is a library for generate scafolld of the machine learning project... 
 
 ### Languages supported 
-[X] Python 
-[] R
-[] Java
-[] JavaScript 
+- [X] Python 
+- [ ] R
+- [ ] Java
+- [ ] JavaScript 
 
 ### Dependencies 
 - pipenv 
