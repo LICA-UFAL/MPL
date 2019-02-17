@@ -2,8 +2,6 @@
 	
 "icons for tests here"
 
----
-
 ### Description 
 MPL is a library for generate scafolld of the machine learning project... 
 
@@ -16,12 +14,17 @@ MPL is a library for generate scafolld of the machine learning project...
 ### Dependencies 
 - pipenv 
 - ...
-### Getting Starde
 
-Firs install depedencies MPL:
+### Getting Starded
+First install depedencies MPL:
 
 ```
 pipenv install --skip-lock 
+```
+
+### Build docs
+```shell
+cd doc/ && make html 
 ```
 
 ### Collaborators 
