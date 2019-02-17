@@ -1,5 +1,6 @@
-# MPL
-Model Processing Library
+# MPL - Model Processing Library
+	
+"icons for tests here"
 
 ### Description 
 MPL is a library for generate scafolld of the machine learning project... 
@@ -14,8 +15,8 @@ MPL is a library for generate scafolld of the machine learning project...
 - pipenv 
 - ...
 
-### Getting Starde
-Firs install depedencies MPL:
+### Getting Starded
+First install depedencies MPL:
 
 ```
 pipenv install --skip-lock 
@@ -32,4 +33,3 @@ cd doc/ && make html
 - [Francisco Vieira](https://github.com/vieirafrancisco)
 - [Jadson Lúcio](https://github.com/vieirafrancisco) 
 - [Luís Eduardo](https://github.com/vieirafrancisco)
-
