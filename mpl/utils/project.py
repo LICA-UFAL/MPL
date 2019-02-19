@@ -1,6 +1,6 @@
 import os
 
-SCAFFOLD_PROJECTS_PATH = "scaffolds/"
+SCAFFOLD_PROJECTS_PATH = "mpl/scaffolds/"
 
 def create_project():
     pass
