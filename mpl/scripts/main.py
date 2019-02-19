@@ -1,5 +1,6 @@
 import click
-from .. import __version__
+from mpl import __version__
+from mpl.scripts import startproject
 
 
 def version(ctx, param, value):
@@ -16,3 +17,4 @@ def cli():
     pass
 
 
+cli.add_command(startproject.startproject)
