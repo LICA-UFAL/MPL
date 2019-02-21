@@ -3,7 +3,7 @@
 "icons for tests here"
 
 ### Description 
-MPL is a library for generate scafolld of the machine learning project... 
+MPL is a library for creating and managing Machine Learning projects that facilitates preprocessing and data cleaning, creation, and model testing.
 
 ### Languages supported 
 - [X] Python 
@@ -13,7 +13,12 @@ MPL is a library for generate scafolld of the machine learning project...
 
 ### Dependencies 
 - pipenv 
-- ...
+- sklearn 
+- keras 
+- tensorflow 
+- pandas
+- click
+
 
 ### Getting Starded
 First install depedencies MPL:
