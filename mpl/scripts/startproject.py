@@ -1,6 +1,10 @@
 import click 
-from mpl.utils.custom.click_types import Choice_file
+
+from mpl.utils.file import read_file_to_dict 
+from mpl.utils.custom.click_types import ChoiceElement
 from mpl.utils.project import create_project, get_scaffolds
+
+
 
 @click.command()
 @click.option("-c","--config", help = "project default configuration .yml file path",
@@ -8,18 +12,21 @@ from mpl.utils.project import create_project, get_scaffolds
 def startproject(config):
     """ Create machine learning project scaffold """
     if not config:
-        project_scaffolds_paths = get_scaffolds()
+        project_scaffolds = get_scaffolds()
         
         project_name = click.prompt("Project name", default= "My First project")
         project_language = click.prompt("Language", default= "English")
         author_name = click.prompt("Author name")
         author_email = click.prompt("Author email")
 
-        project_scaffold_config = click.prompt("Scaffold type", type = Choice_file(project_scaffolds_paths,
+        project_scaffold_path = click.prompt("Scaffold type", type = ChoiceElement(project_scaffolds,
                                              description = "Scaffold config file path"))
 
-        open(project_scaffold_config, "r")
+
+        create_project(project_name, project_language, author_name,
+                        author_email, scaffold_path = project_scaffold_path)
     else:
-        create_project(config)
+        dict_config = read_file_to_dict(config)
+        create_project(**dict_config)
 
 
