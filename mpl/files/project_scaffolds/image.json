@@ -1,0 +1,12 @@
+{
+    "name" : "MPL cache folde",
+    "tree" : {
+      "mpl" : {
+        "scaffolds" : {
+            "CopyFolder" : ["mpl/files/project_scaffolds"]
+        },
+        "projects" : {}
+      }
+    }
+  
+  }
