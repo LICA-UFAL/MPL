@@ -1,0 +1,1 @@
+from mpl.utils.scaffold.scaffold import Scaffold
