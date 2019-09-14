@@ -19,12 +19,12 @@ def startproject(config):
         author_name = click.prompt("Author name")
         author_email = click.prompt("Author email")
 
-        project_scaffold_path = click.prompt("Scaffold type", type = ChoiceElement(project_scaffolds,
+        project_scaffold = click.prompt("Scaffold type", type = ChoiceElement(project_scaffolds,
                                              description = "Scaffold config file path"))
 
 
         create_project(project_name, project_language, author_name,
-                        author_email, scaffold_path = project_scaffold_path)
+                        author_email, scaffold = project_scaffold)
     else:
         dict_config = read_file_to_dict(config)
         create_project(**dict_config)

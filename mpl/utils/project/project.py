@@ -6,9 +6,11 @@ from mpl.utils.project.paths import get_scaffolds_path, \
 
 
 def create_project(project_name, project_language, author_name, author_email,
-                           scaffold_path = None, project_path = os.getcwd(), **extra_config):
-    if scaffold_path is not None:
-        Scaffold.load_from_file(scaffold_path).run(project_path)
+                           scaffold = None, project_path = os.getcwd(), **extra_config):
+    if isinstance(scaffold, Scaffold):
+        scaffold.run(project_path)
+    elif isinstance(scaffold, str):
+        Scaffold.load_from_file(scaffold).run(project_path)
 
     default_project_cache_scaffold = Scaffold.load_from_file(get_project_cache_scaffold_path())
     dict_project_scaffold = {
